@@ -34,7 +34,7 @@
           </div>
         </div>
         <div class="col box-link bg-red">
-          <nuxt-link to="/fetcher/catch_me" class="text-link hover-blue">GO</nuxt-link>
+          <nuxt-link to="/getdata" class="text-link hover-blue">GO</nuxt-link>
         </div>
       </div>
     </div>
@@ -154,4 +154,3 @@ button {
   }
 }
 </style>
-
