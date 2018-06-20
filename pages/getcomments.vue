@@ -108,18 +108,21 @@ export default {
 </script>
 
 <style lang="css" scoped>
+ul {
+  list-style-type: none;
+}
 .info {
   width       : 60vw;
   height      : 160px;
   margin-top  : 10px;
-  margin-left : 30px;
+  margin-left : 1vw;
   background  : #c68400;
   border      : 3px solid #fff ;
 }
 .box {
   width       : 70vw;
   height      : auto;
-  margin-left : 200px;
+  margin-left : 15vw;
   margin-top  : 50px;
   background  : #F6BB42;
 }
@@ -132,7 +135,7 @@ export default {
   display           : flex;
   justify-content   : center;
   align-items       : center;
-  margin-left       : 28%;
+  margin-left       : 20vw;
   margin-top        : 20px;
   font-size         : 2em;
   width             : 400px;
@@ -150,7 +153,7 @@ export default {
   margin-left: 20px;
 }
 .txt {
-  margin-left: 30px;
+  margin-left: 1vw;
 }
 .id-txt {
   margin-left: 100px;
@@ -158,7 +161,66 @@ export default {
   font-size: 1.3em;
 }
 .name-txt {
-  margin-left: 60px;
+  margin-left: 3vw;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 1024px) {
+  .info {
+    width       : 70vw;
+    height      : 180px;
+    margin-top  : 10px;
+    margin-left : 1vw;
+    background  : #c68400;
+    border      : 3px solid #fff ;
+  }
+  .box {
+    width       : 80vw;
+    height      : auto;
+    margin-left : 10vw;
+    margin-top  : 50px;
+    background  : #F6BB42;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .box {
+    width       : 90vw;
+    height      : auto;
+    margin-left : 5vw;
+    margin-top  : 50px;
+    background  : #F6BB42;
+  }
+  .info {
+    width       : 80vw;
+    margin-left : -1vw;
+  }
+  .click {
+    height            : 50px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  click {
+    margin-left       : -10vw;
+    width             : 95vw;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .box {
+    width       : 100vw;
+    height      : auto;
+    margin-left : 0vw;
+    margin-top  : 0px;
+  }
+  .click {
+    margin-left       : 2vw;
+    width             : 95vw;
+  }
+  .info {
+    width       : 95vw;
+    height      : 200px;
+    margin-top  : 10px;
+    margin-left : -7vw;
+    background  : #c68400;
+    border      : 3px solid #fff ;
+  }
 }
 </style>
