@@ -97,13 +97,12 @@ export default {
           .catch((e) => {
             // this.errors = this.errors.push(e);
             // this.error = this.errors.push(e.request.message);
-            console.log(JSON.stringify(e));
-            // this.text = e.message;
+            // console.log(this.errors);
+            this.text = e.message;
             // alert(e.message);
-            // this.popup = true;
+            this.popup = true;
             // this.error = true;
           });
-
       }, 1000);
     },
 
